@@ -18,14 +18,15 @@ class SimpleService extends React.Component {
     } 
 
     render() {
+        var data = this.simpleData();
         return (
             <div> 
-                <p> id: { this.simpleData().id }</p>
-                <p> age: { this.simpleData().age }</p>
-                <p> city: { this.simpleData().city }</p>
-                <p> experience: { this.simpleData().experience }</p>
-                <p> technologies: { this.simpleData().technologies }</p>
-                <p> salary net: { this.simpleData().salaryNet } </p>
+                <p> id: { data.id }</p>
+                <p> age: { data.age }</p>
+                <p> city: { data.city }</p>
+                <p> experience: { data.experience }</p>
+                <p> technologies: { data.technologies }</p>
+                <p> salary net: { data.salaryNet } </p>
             </div>
         )
     }
